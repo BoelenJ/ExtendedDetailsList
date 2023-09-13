@@ -358,8 +358,8 @@ function getButtonCell(
         );
     } else if (buttonType === 'icon'){
         cellContents = <IconButton iconProps={{iconName: iconName}} 
-        styles={{iconDisabled: {backgroundColor: 'transparent'}}}
-        style={{padding: padding, height: `${height}px`}} onClick={cellNavigation} disabled={actionDisabled}/>
+        style={{padding: padding, height: `${height}px`, backgroundColor: 'transparent' }}
+        styles={{iconDisabled: {backgroundColor: 'transparent'}}} onClick={cellNavigation} disabled={actionDisabled}/>
     } else {   
         cellContents = !isBlank ? (
             <DefaultButton style={{padding: padding, height: `${height}px`}} onClick={cellNavigation} disabled={actionDisabled}>
